@@ -31,3 +31,32 @@
 2019-11-06 19:22:47.783  INFO 13032 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2019-11-06 19:22:47.799  INFO 13032 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2019-11-06 19:22:47.820  INFO 13032 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-11-11 10:07:44.404  INFO 15636 --- [main] com.lra.shopuser.ShopUserApplication     : Starting ShopUserApplication on Leon-PC with PID 15636 (C:\Users\XY\Desktop\webmagic\graduation\shop-user\target\classes started by XY in C:\Users\XY\Desktop\webmagic\graduation)
+2019-11-11 10:07:44.407  INFO 15636 --- [main] com.lra.shopuser.ShopUserApplication     : The following profiles are active: common
+2019-11-11 10:07:45.625  INFO 15636 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-11 10:07:45.630  INFO 15636 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-11 10:07:45.660  INFO 15636 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-11-11 10:07:46.070  INFO 15636 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$d2a62cbe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-11 10:07:46.121  INFO 15636 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-11-11 10:07:46.155  INFO 15636 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-11 10:07:46.328  INFO 15636 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisAutoConfiguration' of type [com.lra.common.config.RedisAutoConfiguration$$EnhancerBySpringCGLIB$$c7257fd9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-11 10:07:46.758  INFO 15636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2019-11-11 10:07:46.771  INFO 15636 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-11 10:07:46.772  INFO 15636 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-11 10:07:46.893  INFO 15636 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-11 10:07:46.893  INFO 15636 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2427 ms
+2019-11-11 10:07:47.227  INFO 15636 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-11 10:07:56.833  INFO 15636 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-11 10:07:57.991  INFO 15636 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-11-11 10:07:58.224  INFO 15636 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-11 10:07:58.776  INFO 15636 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-11 10:07:58.795  INFO 15636 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-11 10:07:58.836  INFO 15636 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-11 10:07:59.061  INFO 15636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2019-11-11 10:07:59.065  INFO 15636 --- [main] com.lra.shopuser.ShopUserApplication     : Started ShopUserApplication in 15.211 seconds (JVM running for 23.499)
+2019-11-11 10:08:12.606  INFO 15636 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-11 10:08:12.607  INFO 15636 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-11 10:08:12.651  INFO 15636 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 44 ms
+2019-11-11 10:08:24.671  INFO 15636 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-11 10:08:24.696  INFO 15636 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-11-11 10:08:24.706  INFO 15636 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
