@@ -1,0 +1,33 @@
+2019-11-06 19:10:57.368  INFO 13032 --- [main] com.lra.shopuser.ShopUserApplication     : Starting ShopUserApplication on Leon-PC with PID 13032 (D:\Anglar\graduation\shop-user\target\classes started by XY in D:\Anglar\graduation)
+2019-11-06 19:10:57.375  INFO 13032 --- [main] com.lra.shopuser.ShopUserApplication     : The following profiles are active: common
+2019-11-06 19:11:01.363  INFO 13032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-06 19:11:01.367  INFO 13032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-06 19:11:01.396  INFO 13032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-11-06 19:11:01.771  INFO 13032 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$3745a55b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 19:11:01.822  INFO 13032 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-11-06 19:11:01.853  INFO 13032 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 19:11:02.066  INFO 13032 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisAutoConfiguration' of type [com.lra.common.config.RedisAutoConfiguration$$EnhancerBySpringCGLIB$$2bc4f876] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-06 19:11:02.502  INFO 13032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2019-11-06 19:11:02.516  INFO 13032 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-06 19:11:02.516  INFO 13032 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-06 19:11:02.643  INFO 13032 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-06 19:11:02.643  INFO 13032 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5195 ms
+2019-11-06 19:11:02.887  INFO 13032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-06 19:11:04.076  INFO 13032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-06 19:11:05.393  INFO 13032 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-11-06 19:11:05.617  INFO 13032 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-06 19:11:06.484  INFO 13032 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-11-06 19:11:06.533  INFO 13032 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-11-06 19:11:06.613  INFO 13032 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-11-06 19:11:06.877  INFO 13032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2019-11-06 19:11:06.880  INFO 13032 --- [main] com.lra.shopuser.ShopUserApplication     : Started ShopUserApplication in 10.376 seconds (JVM running for 11.847)
+2019-11-06 19:11:40.999  INFO 13032 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-06 19:11:41.000  INFO 13032 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-06 19:11:41.013  INFO 13032 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-11-06 19:14:35.596  INFO 13032 --- [http-nio-9999-exec-4] com.lra.common.aop.LogAspect             : 日志统一打印 ===== com.lra.shopuser.controller.UserController.addUser() start =====,参数:
+[{"password":"string","phone":"string","name":"string","hearImg":"string"},{"messageCodesResolver":{"prefix":""},"nestedPath":"","suppressedFields":[],"objectName":"userRegiterDto","target":{"password":"string","phone":"string","name":"string","hearImg":"string"}}]
+2019-11-06 19:14:35.635  INFO 13032 --- [http-nio-9999-exec-4] com.lra.common.aop.LogAspect             : 日志统一打印 ===== com.lra.shopuser.controller.UserController.addUser() end =====,响应时间:35毫秒,响应内容:
+{"msg":"请输入正确的手机号码~","apiCode":"FAIL"}
+2019-11-06 19:22:47.783  INFO 13032 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-06 19:22:47.799  INFO 13032 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-11-06 19:22:47.820  INFO 13032 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

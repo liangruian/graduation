@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "audience",
+      "type": "com.lra.common.value.Audience",
+      "sourceType": "com.lra.common.value.Audience"
+    }
+  ],
+  "properties": [
+    {
+      "name": "audience.base64-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.lra.common.value.Audience"
+    },
+    {
+      "name": "audience.expires-second",
+      "type": "java.lang.Long",
+      "sourceType": "com.lra.common.value.Audience"
+    }
+  ],
+  "hints": []
+}
