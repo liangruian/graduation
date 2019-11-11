@@ -1,9 +1,0 @@
-ali:
-  sms:
-    signName: Ange
-    templateCode: SMS_175572134
-    accessKeyID: LTAI4FqDruoEgTGuF5H3MfKJ
-    accessKeySecret: PPX7zPiAmrAQ64qaGg9LaousbewBGH
-audience:
-  base64Secret: MDk4ZjZiY2Q0NjIxZDM3M2NhZGU0ZTgzMjYyN2I0ZjY=
-  expiresSecond: 172800
