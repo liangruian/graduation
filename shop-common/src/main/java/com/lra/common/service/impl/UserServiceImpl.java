@@ -16,6 +16,9 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Set;
+import java.util.stream.Collectors;
+
 /**
  * <p>
  * 服务实现类
@@ -68,5 +71,10 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         wrapper.lambda().eq(User::getName,name);
         User user = getOne(wrapper);
         return user;
+    }
+
+    @Override
+    public Set<String> findPermissionsByUserId(String id) {
+        return baseMapper.findPermissionsByUserId(id).stream().collect(Collectors.toSet());
     }
 }

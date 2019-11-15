@@ -1,13 +1,15 @@
-package com.lra.shopuser;
+package com.lra.user;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+import java.util.Map;
+
+//@SpringBootTest
 class ShopUserApplicationTests {
 
     @Test
     void contextLoads() {
+        Map
     }
 
 }

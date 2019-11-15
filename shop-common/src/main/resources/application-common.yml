@@ -7,3 +7,8 @@ ali:
 audience:
   base64Secret: MDk4ZjZiY2Q0NjIxZDM3M2NhZGU0ZTgzMjYyN2I0ZjY=
   expiresSecond: 172800
+shrioRedis:
+  host: 47.101.128.83
+  port: 6379
+  password:
+  timeout: ${audience.expiresSecond}

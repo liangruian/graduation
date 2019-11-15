@@ -1,4 +1,4 @@
-package com.lra.shopuser.dto;
+package com.lra.user.dto;
 
 import lombok.Data;
 

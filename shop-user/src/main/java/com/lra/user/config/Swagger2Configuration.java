@@ -1,4 +1,4 @@
-package com.lra.shopuser.config;
+package com.lra.user.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,7 +24,7 @@ public class Swagger2Configuration {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.lra.shopuser.controller"))//这是注意的代码
+                .apis(RequestHandlerSelectors.basePackage("com.lra.user.controller"))//这是注意的代码
                 .paths(PathSelectors.any())
                 .build();
     }

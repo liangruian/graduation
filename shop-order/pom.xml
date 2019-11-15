@@ -29,6 +29,11 @@
             <artifactId>shop-commodity</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.lra</groupId>
+            <artifactId>shop-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 
     </dependencies>
 

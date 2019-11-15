@@ -1,12 +1,11 @@
 package com.lra.common;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
-@SpringBootTest
+//@SpringBootTest
 class CommonApplicationTests {
 
     @Test

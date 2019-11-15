@@ -1,9 +1,8 @@
-package com.lra.shopuser.controller;
+package com.lra.user.controller;
 
 
 import cn.hutool.crypto.digest.DigestAlgorithm;
 import cn.hutool.crypto.digest.Digester;
-import com.lra.common.annotations.UserLoginToken;
 import com.lra.common.dto.PhoneCodeSendDto;
 import com.lra.common.dto.UserRegiterDto;
 import com.lra.common.entity.User;
@@ -13,9 +12,11 @@ import com.lra.common.utils.PhoneVCodeSendUtils;
 import com.lra.common.utils.RedisUtil;
 import com.lra.common.utils.TokenUtils;
 import com.lra.common.value.Audience;
-import com.lra.shopuser.dto.UserLoginDto;
+import com.lra.user.dto.UserLoginDto;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authz.annotation.RequiresAuthentication;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
@@ -72,11 +73,13 @@ public class UserController {
     }
 
 
-    @UserLoginToken
+    @RequiresAuthentication
     @GetMapping("/ss")
-    public String ss(){
-        return "s";
+    public JsonResult ss(){
+        User user = (User) SecurityUtils.getSubject().getPrincipal();
+        return JsonResult.success(user);
     }
+
 
     @ApiOperation("发送用户注册验证码")
     @RequestMapping(value = "/sendRegisterPhoneCode", method = RequestMethod.GET)

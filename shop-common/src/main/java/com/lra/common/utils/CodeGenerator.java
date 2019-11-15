@@ -52,6 +52,7 @@ public class CodeGenerator {
         gc.setAuthor("Anglar");
         gc.setOpen(false);
         gc.setSwagger2(true); //实体属性 Swagger2 注解
+        gc.setBaseResultMap(true);
         mpg.setGlobalConfig(gc);
 
         // 数据源配置
@@ -65,7 +66,7 @@ public class CodeGenerator {
 
         // 包配置
         PackageConfig pc = new PackageConfig();
-        pc.setParent("com.lra.shop" + comm);
+        pc.setParent("com.lra." + comm);
         mpg.setPackageInfo(pc);
 
         // 自定义配置

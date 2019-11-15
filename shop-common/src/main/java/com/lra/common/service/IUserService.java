@@ -5,6 +5,8 @@ import com.lra.common.dto.UserRegiterDto;
 import com.lra.common.entity.User;
 import com.lra.common.utils.JsonResult;
 
+import java.util.Set;
+
 /**
  * <p>
  *  服务类
@@ -20,4 +22,6 @@ public interface IUserService extends IService<User> {
     User findUserByPhone(String phone);
 
     User findByName(String name);
+
+    Set<String> findPermissionsByUserId(String id);
 }

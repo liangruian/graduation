@@ -10,8 +10,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>shop-common</module>
         <module>shop-parent</module>
+        <module>shop-common</module>
         <module>shop-user</module>
         <module>shop-commodity</module>
         <module>shop-order</module>
@@ -20,47 +20,5 @@
     <properties>
         <java.version>1.8</java.version>
     </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>us.codecraft</groupId>
-            <artifactId>webmagic-core</artifactId>
-            <version>0.7.3</version>
-        </dependency>
-        <dependency>
-            <groupId>us.codecraft</groupId>
-            <artifactId>webmagic-extension</artifactId>
-            <version>0.7.3</version>
-        </dependency>
-        <dependency>
-            <groupId>us.codecraft</groupId>
-            <artifactId>webmagic-selenium</artifactId>
-            <version>0.7.3</version>
-        </dependency>
-        <dependency>
-            <groupId>com.ccb</groupId>
-            <artifactId>project</artifactId>
-            <version>4.1.10</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/jnetpcap.jar</systemPath>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>6</source>
-                    <target>6</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

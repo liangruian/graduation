@@ -1,4 +1,4 @@
-package com.lra.shopuser;
+package com.lra.user;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;

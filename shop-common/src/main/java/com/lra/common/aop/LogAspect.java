@@ -28,7 +28,7 @@ public class LogAspect {
     private final static String TENANT_KEY = "tenantId";
 
 
-    @Pointcut("execution (* com.lra.*.controller..*.*(..))")
+        @Pointcut("execution (* com.lra.*.controller..*.*(..))")
     public void apiLogAop() {
     }
 

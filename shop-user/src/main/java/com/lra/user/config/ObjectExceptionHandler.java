@@ -1,4 +1,4 @@
-package com.lra.shopuser.config;
+package com.lra.user.config;
 
 import com.lra.common.utils.JsonResult;
 import org.slf4j.Logger;

@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
+import java.io.Serializable;
+
 /**
  * <p>
  * 
@@ -17,9 +19,9 @@ import lombok.experimental.Accessors;
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
 @ApiModel(value="User对象", description="")
-public class User extends BaseEntity {
+public class User extends BaseEntity implements Serializable{
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = -3002276770012635599L;
 
     private String name;
 
