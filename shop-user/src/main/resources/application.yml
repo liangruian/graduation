@@ -11,14 +11,14 @@ mybatis-plus:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://47.101.128.83:3306/my_shop
-    username: liangruian
-    password: 123456
+    url: jdbc:mysql://localhost:3306/my_shop?serverTimezone=GMT
+    username: root
+    password: 123
   profiles:
     active: common
   redis:
     database: 0
-    host: 47.101.128.83
+    host: localhost
     port: 6379
     password:
     jedis:

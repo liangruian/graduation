@@ -33,7 +33,7 @@ public class JwtFilter extends BasicHttpAuthenticationFilter {
             executeLogin(request, response);
             return true;
         } catch (Exception e) {
-            e.printStackTrace();
+                e.printStackTrace();
             throw new AuthenticationException("Token失效请重新登录");
         }
     }

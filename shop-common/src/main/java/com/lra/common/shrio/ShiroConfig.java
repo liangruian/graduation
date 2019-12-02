@@ -49,11 +49,11 @@ public class ShiroConfig {
         filterChainDefinitionMap.put("/swagger-ui/**", "anon");
         filterChainDefinitionMap.put("/user/loginByPassword", "anon");
         //swagger接口权限 开放
-        filterChainDefinitionMap.put("/swagger-ui.html","anon");
-        filterChainDefinitionMap.put("/swagger/**","anon");
+        filterChainDefinitionMap.put("/swagger-ui.html", "anon");
+        filterChainDefinitionMap.put("/swagger/**", "anon");
         filterChainDefinitionMap.put("/webjars/**", "anon");
-        filterChainDefinitionMap.put("/swagger-resources/**","anon");
-        filterChainDefinitionMap.put("/v2/**","anon");
+        filterChainDefinitionMap.put("/swagger-resources/**", "anon");
+        filterChainDefinitionMap.put("/v2/**", "anon");
         filterChainDefinitionMap.put("/static/**", "anon");
 
         // 添加自己的过滤器并且取名为jwt
@@ -110,7 +110,7 @@ public class ShiroConfig {
         redisManager.setHost(shrioRedisHost);
         redisManager.setPort(redisPort);
         // redisManager.setExpire(18000);// 配置缓存过期时间
-        redisManager.setTimeout(redisTimeout);
+        redisManager.setTimeout(2 * redisTimeout);
 //        redisManager.setPassword(password);
         return redisManager;
     }
